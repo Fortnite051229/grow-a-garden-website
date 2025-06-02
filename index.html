@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Grow a Garden – Trading Hub</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #e6ffe6;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #66bb6a;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background-color: #4caf50;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    main {
+      padding: 20px;
+    }
+    .trade-card {
+      background-color: white;
+      border: 1px solid #ccc;
+      margin-bottom: 15px;
+      padding: 15px;
+      border-radius: 5px;
+    }
+    .btn {
+      background-color: #4caf50;
+      color: white;
+      padding: 10px;
+      border: none;
+      cursor: pointer;
+      border-radius: 3px;
+    }
+    form {
+      background-color: white;
+      padding: 15px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      margin-top: 30px;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 5px 0 15px 0;
+      border: 1px solid #aaa;
+      border-radius: 3px;
+    }
+    footer {
+      background-color: #66bb6a;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Grow a Garden – Tauschbörse</h1>
+    <p>Hier kannst du Items mit anderen Spielern tauschen!</p>
+  </header>
+
+  <nav>
+    <a href="#angebote">Angebote</a>
+    <a href="#formular">Neues Angebot</a>
+    <a href="#kontakt">Kontakt</a>
+  </nav>
+
+  <main>
+    <h2 id="angebote">🌿 Aktuelle Angebote</h2>
+
+    <div class="trade-card">
+      <h3>🌻 Biete: Sonnenblumen-Samen</h3>
+      <p>Suche: Gießkanne (Level 2+)</p>
+      <p>Spieler: <strong>GreenElla#5472</strong></p>
+      <button class="btn">Jetzt tauschen</button>
+    </div>
+
+    <div class="trade-card">
+      <h3>🥕 Biete: 10 Karotten</h3>
+      <p>Suche: Kompost oder Schaufel</p>
+      <p>Spieler: <strong>RasmusGardener#9031</strong></p>
+      <button class="btn">Jetzt tauschen</button>
+    </div>
+
+    <div class="trade-card">
+      <h3>🍄 Biete: Pilz-Set (Selten)</h3>
+      <p>Suche: Lavendel-Samen</p>
+      <p>Spieler: <strong>PlantQueen#1100</strong></p>
+      <button class="btn">Jetzt tauschen</button>
+    </div>
+
+    <h2 id="formular">🌱 Neues Angebot erstellen</h2>
+    <form onsubmit="event.preventDefault(); alert('Dein Angebot wurde eingereicht! (Nur Demo)'); this.reset();">
+      <label>Biete:</label>
+      <input type="text" placeholder="z. B. Tomatensamen" required />
+
+      <label>Suche:</label>
+      <input type="text" placeholder="z. B. Gießkanne" required />
+
+      <label>Dein Spielername:</label>
+      <input type="text" placeholder="z. B. FlowerFan#1234" required />
+
+      <button class="btn" type="submit">Angebot erstellen</button>
+    </form>
+
+    <h2 id="kontakt">📬 Kontakt</h2>
+    <p>Du hast Fragen oder willst einem Admin schreiben?</p>
+    <p>👉 Tritt unserem Discord bei: <strong><a href="https://discord.gg/deinserver" target="_blank">discord.gg/deinserver</a></strong></p>
+  </main>
+
+  <footer>
+    © 2025 Grow a Garden – Fanprojekt | Nicht offiziell mit dem Spiel verbunden
+  </footer>
+
+</body>
+</html>
